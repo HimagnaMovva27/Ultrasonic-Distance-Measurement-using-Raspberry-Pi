@@ -32,6 +32,30 @@ This project demonstrates real-time distance measurement using ultrasonic sensin
 
 [ultrasonic.py](ultrasonic.py)
 
+##  Output
+Displays distance in centimeters on the terminal
+Provides real-time measurement of object distance
+
+##  Applications
+
+Obstacle detection systems
+Robotics navigation
+Distance measurement devices
+Smart parking systems
+
+##  Key Features
+
+Real-time distance sensing
+Accurate measurement using ultrasonic waves
+Simple and efficient implementation
+
+##  Concepts Used
+
+Sensor Interfacing
+Time-of-Flight Measurement
+GPIO Programming
+Embedded Systems
+
 ##  Author
 
 HimagnaMovva27
