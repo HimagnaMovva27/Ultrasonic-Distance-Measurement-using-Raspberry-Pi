@@ -1,45 +1,38 @@
-# Ultrasonic-Distance-Measurement-using-Raspberry-Pi
-Ultrasonic distance measurement system using Raspberry Pi and HC-SR04 sensor to calculate distance based on echo time, useful for obstacle detection, robotics, and automation applications.
+# Ultrasonic Distance Measurement using Raspberry Pi
 
-## Description
+##  Objective
+To measure the distance of an object using an ultrasonic sensor (HC-SR04) interfaced with Raspberry Pi by calculating the time taken for sound waves to travel.
 
-This project demonstrates how to measure distance using an ultrasonic sensor (HC-SR04) with Raspberry Pi. The sensor calculates the distance of an object by sending ultrasonic waves and measuring the time taken for the echo to return.
+##  Overview
+This project demonstrates real-time distance measurement using ultrasonic sensing technology. The system works on the principle of **time-of-flight**, where the time taken by an ultrasonic wave to hit an object and return is used to calculate the distance.
 
-## Components Used
+##  Components Used
+- Universal IOT Kit with Raspberry Pi
+- Ultrasonic Sensor (HC-SR04)
+- Jumper Wires
+- USB Cable
+- Connecting wires
 
-* Ultrasonic Sensor (HC-SR04)
-* USB Cable
-* Jumper Wires
-* Universal IoT Trainer Kit with Raspberry Pi  
-* Connecting Wires
+##  Connections
+- TRIG → GPIO Pin 19 (BCM mode)
+- ECHO → GPIO Pin 13 (BCM mode)
+- VCC → 5V
+- GND → GND
 
-## Software Used
+##  Working Principle
+1. The TRIG pin sends a short ultrasonic pulse.
+2. The sound wave travels through air and reflects back after hitting an object.
+3. The ECHO pin receives the reflected signal.
+4. Raspberry Pi calculates the time difference between sending and receiving.
+5. Distance is calculated using:
 
-* Thonny Python IDE
-* Raspbian OS
+   Distance = Time × Speed of Sound / 2
 
-## Connections
-
-* TRIG → GPIO Pin 19 (BCM mode)
-* ECHO → GPIO Pin 13 (BCM mode)
-* VCC → 5V
-* GND → GND
-
-## Circuit Diagram Explanation
-
-The ultrasonic sensor sends high-frequency sound waves through the TRIG pin. These waves reflect back after hitting an object and are received by the ECHO pin. The Raspberry Pi measures the time taken for the echo to return and calculates the distance based on this time.
-
-## Code
+##  Code
 
 [ultrasonic.py](ultrasonic.py)
 
-## Applications
-
-* Obstacle detection
-* Robotics
-* Distance measurement systems
-* Smart parking systems
-
-## Author
+##  Author
 
 HimagnaMovva27
+
